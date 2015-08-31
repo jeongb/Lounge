@@ -16,9 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.jpg" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-Vr-Owe">
-                                <rect key="frame" x="0.0" y="0.0" width="374" height="345"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Space Lounge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ee-fz-dgn">
                                 <rect key="frame" x="61" y="162" width="252" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
@@ -43,13 +40,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDC-CN-mUb">
-                                <rect key="frame" x="61" y="422" width="198" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvZ-75-Jc3">
-                                <rect key="frame" x="267" y="396" width="55" height="30"/>
+                                <rect key="frame" x="160" y="490" width="55" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,12 +52,12 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bro-R6-sXR">
-                                <rect key="frame" x="61" y="371" width="198" height="30"/>
+                                <rect key="frame" x="61" y="371" width="252" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7R-bO-YF0">
-                                <rect key="frame" x="93" y="472" width="175" height="30"/>
+                                <rect key="frame" x="90" y="548" width="175" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <state key="normal" title=" Not a member ? Sign Up">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,15 +73,18 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDC-CN-mUb">
+                                <rect key="frame" x="61" y="422" width="252" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                     </view>
                     <navigationItem key="navigationItem" id="0BE-He-Yhr"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="background" destination="oaW-Vr-Owe" id="sbQ-r7-bGH"/>
                         <outlet property="fbButton" destination="xWs-dG-Wum" id="p4O-96-z2C"/>
                         <outlet property="googButton" destination="Xob-c1-cUO" id="lbU-Il-d7R"/>
                         <outlet property="idText" destination="bro-R6-sXR" id="DUn-5G-ymy"/>
@@ -293,23 +288,9 @@
                         <viewControllerLayoutGuide type="bottom" id="z1d-P6-PdW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SsG-Yy-hwS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="94" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gNN-ai-aWU">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="Yat-ch-jbW"/>
-                                    <tabBarItem systemItem="more" id="3WT-BS-vrv"/>
-                                </items>
-                            </tabBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d8I-5g-owA">
-                                <rect key="frame" x="0.0" y="64" width="99" height="63"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djV-uy-J3h">
-                                <rect key="frame" x="78" y="181" width="240" height="128"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-SO-4lf">
                                 <rect key="frame" x="170" y="390" width="48" height="30"/>
                                 <state key="normal" title="upload">
@@ -328,17 +309,30 @@
                                     <action selector="upload:" destination="5wn-x1-Zhh" eventType="touchUpInside" id="1d0-JE-W7p"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djV-uy-J3h">
+                                <rect key="frame" x="16" y="72" width="147" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Circle" id="bFY-Sp-xLl"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="cam" destination="djV-uy-J3h" id="8LA-R6-guD"/>
-                        <outlet property="img" destination="d8I-5g-owA" id="DsQ-jf-WZz"/>
+                        <outlet property="searchDisplayController" destination="nWl-Kq-zaz" id="BUa-aR-vR8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6YX-Yq-6FS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="nWl-Kq-zaz">
+                    <connections>
+                        <outlet property="delegate" destination="5wn-x1-Zhh" id="HSY-YA-RUX"/>
+                        <outlet property="searchContentsController" destination="5wn-x1-Zhh" id="D3a-YM-6r4"/>
+                        <outlet property="searchResultsDataSource" destination="5wn-x1-Zhh" id="cfa-sY-CBP"/>
+                        <outlet property="searchResultsDelegate" destination="5wn-x1-Zhh" id="f4g-z2-2SQ"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2297.5" y="901.5"/>
         </scene>
@@ -347,7 +341,7 @@
             <objects>
                 <tableViewController id="qYr-SJ-kng" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7Y1-pm-NMN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="94" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -378,11 +372,31 @@
             </objects>
             <point key="canvasLocation" x="2297.5" y="1654.5"/>
         </scene>
-        <!--Space Lounge-->
+        <!--Tab Bar-->
         <scene sceneID="Lhj-Y5-VH1">
             <objects>
                 <tabBarController id="Cfl-EZ-BwK" customClass="tabBar" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Space Lounge" id="BuD-Fg-Lzx"/>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="BuD-Fg-Lzx">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="wGx-6w-6xf">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Pi-bX-XHG">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ㅇ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="K1N-cZ-fcI">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="k7v-2C-VP0">
+                                <rect key="frame" x="-23" y="-15" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Jdm-gp-K3D">
@@ -410,7 +424,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sT8-LY-jUw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qLw-ae-TZY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="94" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -482,7 +496,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background.jpg" width="640" height="426"/>
         <image name="id.png" width="32" height="32"/>
     </resources>
 </document>

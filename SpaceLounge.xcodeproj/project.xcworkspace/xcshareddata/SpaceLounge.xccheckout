@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D3AAB3F6-7653-438A-BC00-22F7DBE0CE32</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SpaceLounge</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5A9C88047A8343634B549DC26893DE3321343D95</key>
+		<string>https://github.com/jeongb/Lounge.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SpaceLounge.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5A9C88047A8343634B549DC26893DE3321343D95</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jeongb/Lounge.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5A9C88047A8343634B549DC26893DE3321343D95</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5A9C88047A8343634B549DC26893DE3321343D95</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5A9C88047A8343634B549DC26893DE3321343D95</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lounge</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -39,9 +39,9 @@
     [super viewDidLoad];
 }
 - (IBAction)login:(id)sender {
-    [self performSegueWithIdentifier:@"loginO" sender:sender];
+   // [self performSegueWithIdentifier:@"loginO" sender:sender];
 
-   /* NSString *usrID = _idText.text;
+    NSString *usrID = _idText.text;
     NSString *usrPW = _pwText.text;
     [PFUser logInWithUsernameInBackground:usrID password:usrPW block:^(PFUser *user, NSError *error) {
         if(user){
@@ -54,7 +54,7 @@
             // Ask for re-input of either username or password
         }
     }];
-    */
+    
 }
 
 - (void)didReceiveMemoryWarning {

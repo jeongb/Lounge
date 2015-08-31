@@ -1,21 +1,22 @@
 //
-//  circleViewController.m
+//  PlusViewController.m
 //  SpaceLounge
 //
-//  Created by BoHeon Jeong on 8/18/15.
+//  Created by BoHeon Jeong on 8/31/15.
 //  Copyright (c) 2015 BoHeon Jeong. All rights reserved.
 //
 
-#import "circleViewController.h"
+#import "PlusViewController.h"
 #import "Parse/parse.h"
 
-@interface circleViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *img;
-@property (weak, nonatomic) IBOutlet UIImageView *cam;
+@interface PlusViewController ()
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *img;
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *cam;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *pic;
 
 @end
 
-@implementation circleViewController
+@implementation PlusViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,26 +28,23 @@
         NSLog(@"no image provided");
     }
     else {
-        _img.image = [UIImage imageWithData:imageData];
+        _pic.image = [UIImage imageWithData:imageData];
     }
-    
-    UITapGestureRecognizer *newTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imgTab1)];
-    
-    [_cam setUserInteractionEnabled:YES];
-    
-    [_cam addGestureRecognizer:newTap];
-    
-
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                              message:@"Device has no camera"
+                                                             delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles: nil];
+        
+        [myAlertView show];
+        
+    }
 }
 - (void)viewWillAppear:(BOOL)animated {
     [self viewDidLoad];
 }
-
--(void) imgTab1 {
-    NSLog(@"image clicked");
-    [_cam setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-}
-
 - (IBAction)upload:(id)sender {
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
@@ -67,7 +65,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-    self.cam.image = chosenImage;
+    self.pic.image = chosenImage;
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
